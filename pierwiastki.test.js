@@ -1,8 +1,6 @@
 const assert = require('assert');
 const pierwiastkiRownania = require('./pierwiastki');
 
-// testy uruchamiamy wpisując do terminala npm run dev
-
 describe('funkcjapierwiastkiRownania', () => {
   it('powinna zwrócić pusty obiekt kiedy nie ma pierwiastków rzeczywistych', () => {
     const result = pierwiastkiRownania(1, 2, 3);
