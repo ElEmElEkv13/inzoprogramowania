@@ -1,4 +1,12 @@
 module.exports = function pierwiastkiRownania(a, b, c) {
+  if (typeof a !== 'number' || typeof b !== 'number' || typeof c !== 'number') {
+    return 'Błędne dane';
+  }
+
+  if (a == 0) {
+    return 'To nie jest równanie kwadratowe';
+  }
+
   let delta = b * b - 4 * a * c;
   let root1, root2;
 
